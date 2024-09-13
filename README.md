@@ -4,6 +4,7 @@
 * `sudo -u postgres psql` para inicializar psql
 * `\du` para revisar todos los Users
 * `l` para revisar todas las BDD creadas
+* `\c database` para conectarse a la bdd database
 * `sudo -u postgres createuser --superuser [INGRESAR_USUARIO]:` para crear el usuario
 * `sudo -u postgres createdb [INGRESAR_NOMBRE_BDD]` para crear el database
 * `ALTER USER [INGRESAR_USUARIO] WITH PASSWORD 'CLAVE_GENERICA';` para crear la clave (se debe correr dentro del entorno postgres)
@@ -31,8 +32,8 @@ Es necesario rellenar un archivo .env con los datos obtenidos de la configuraci√
 - `yarn sequelize-cli db:seed:all` Llenar las tablas con seeds.
 - `yarn sequelize-cli migration:generate --name` NOMBRE Crear una nueva migraci√≥n
 - `yarn sequelize-cli seed:generate --name` NOMBRE Crear una nueva seed
-- `yarn dev` Levantar servidor.
 - `yarn sequelize-cli db:setup` Elimina la db, la crea, hace migrations y seeds. (script)
+- `yarn dev` Levantar servidor.
 - ## Flags
 - `--config=src/config/config.js  `Para saber la ruta al archivo config
 
